@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive User Profile Card using HTML and CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="wrapper1 row">
+      <button class="nav-toggle1">
+        <span class="icon-area1"></span>
+      </button>
+      
+      <nav class="nav1">
+        <ul>
+          <li><a href="MyProject/About/About.html">About</a></li>
+          <li><a href="MyProject/index.html">Portfolio</a></li>
+          <li><a href="MyProject/Telegram/telegram.html">Contact</a></li>
+        </ul>            
+      </nav>
+    </div>
+  </header>
+
+  <div class="banner1">
+    <div class="content1">
+        <h2>Мої вітання на неофіційному сайті Олександра </h2>
+        <p>З використанням bootstrap 5</p>
+        
+    </div>
+  </div>
+
+    <div class="wrapper">
+        <div class="user-card">
+            <div class="user-card-img">
+              <img src="MyProject/img/Suhovir.jpg" alt="">
+            </div>
+            <div class="user-card-info">
+              <h2>Олександр Суховірський</h2>
+              <p><span>Пошта:</span> Sashanew212@gmail.com</p>
+              <p><span>Спеціальність:</span> Web Developer</p>
+              <p><span>About me:</span> <br>"Сухий" він же "Каблук".<br>Мабуть, помилково прийшов на 123 спеціальність, але <br>показує себе не зовсім погано. Мав бути вчителем історії.<br>Характер комунікабельний.<br>Не одружений.</p>
+            </div>
+        </div>
+    </div>
+      
+    <script>
+      const cusMenu = document.querySelector(".nav-toggle1");
+          const nav = document.querySelector(".nav1");
+
+          cusMenu.addEventListener("click1", () => {
+          nav.classList.toggle("openMenu1");
+      });
+    </script>
+</body>
+</html>
